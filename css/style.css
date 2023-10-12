@@ -48,12 +48,6 @@ input{
     margin-bottom: 12px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 input:focus{
     border-color: #c45311;
 }
