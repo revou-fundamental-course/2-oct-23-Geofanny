@@ -8,19 +8,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Kalkulator Suhu</h1>
-    </header>
-    <main>
-        <section class="input-section">
-            <label for="input-flied">Celcius</label>
-            <input type="number" placeholder="0" id="input-flied">
-            <div id="input-button">
-                <button>Konversi</button>
-                <button>Reset</button>
-                <button>Reverse</button>
-            </div>
-        </section>
-    </main>
+    <div class="container">
+        <header>
+            <h1 class="title">Kalkulator Suhu</h1>
+        </header>
+        <main>
+            <section class="input-section">
+                <label for="angka" id="label">Celcius</label>
+                <input type="text" placeholder="Masukan Angka" id="angka" required>
+                <!-- <p id="alert"></p> -->
+                <div id="input-button">
+                    <button type="submit" class="konversi" id="konvers">Konversi</button>
+                    <button class="reset" id="reset">Reset</button>
+                    <button class="reverse" id="reverse">Reverse</button>
+                </div>
+
+                <div class="suhu" id="result">
+                    <div>
+                        <h5 id="label-suhu"></h5>
+                        <p id="hasil"></p>
+                        <h5>Cara Kalkulasi</h5>
+                        <p id="hitung"></p>
+                        <p id="desk" class="deskripsi"></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
